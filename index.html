@@ -2,6 +2,11 @@
 <html>
 <head>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
         a {
             color: black;
             font-family: sans-serif;
@@ -14,6 +19,11 @@
             text-decoration: underline;
         }
         
+        .topnav {
+            display: flex;
+            flex-direction: row;
+        }
+        
         .main {
             display: flex;
             flex-direction: column;
@@ -24,7 +34,14 @@
             flex-direction: row;
         }
 
+    /*
         .security {
+            display: flex;
+            flex-direction: row;
+        }
+    */
+
+        .footer {
             display: flex;
             flex-direction: row;
         }
@@ -55,17 +72,21 @@
             <button class="center" type="button">Google Search</button>
             <button class="center" type="button">I'm Feeling Lucky</button>
         </div>
+    <!--
         <div class="security">
             <img class="center" src="https://www.google.com/images/hpp/protecting-users-42x50.png" alt="protecting users">
             <a style="color: blue;" class="center" href="">Learn how Google helps keep you safe while you Search</a>
         </div>
+    -->
     </div>
     <div class="footer">
         <a href="">Advertising</a>
         <a href="">Business</a>
         <a href="">How Search works</a>
+    <!--    
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="Carbon neutral leaf">
         <a href="">Carbon neutral since 2007</a>
+    -->
         <a href="">Privacy</a>
         <a href="">Terms</a>
         <a href="">Settings</a>
