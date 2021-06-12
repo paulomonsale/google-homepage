@@ -25,19 +25,74 @@
             text-decoration: none;
             padding: 15px;
         }
+
+        #apps {
+            opacity: .6;
+            height: 50%;
+            width: auto;
+            align-self: center;
+            padding-right: 15px;
+        }
+
+        #apps:hover {
+            opacity: 1;
+        }
+        
+        #sign-in {
+            background-color: #4285f4;
+            color: white;
+            height: 67%;
+            align-self: center;
+            border-color: transparent;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 0px 12px;
+        }
         
         .main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15%;
+            margin-top: 200px;
         }
 
         .search-bar {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             margin-top: 30px;
             margin-bottom: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50px;
+            border: 1px solid #dfe1e5;
+            width: 450px;
+        }
+
+        .search-bar:hover {
+            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        }
+
+        #search-icon {
+            opacity: .35;
+        }
+
+        #text-field {
+            background-color: white;
+            border-color: transparent;
+            font-size: 16px;
+            width: 375px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #text-field:focus {
+            outline: transparent;
+        }
+
+        #mic-icon {
+            opacity: .35;
         }
 
         .buttons {
@@ -46,7 +101,7 @@
             column-gap: 10px;
         }
 
-        .main-button {
+        .main-buttons {
             background-color: #f2f2f2;
             border: 1px solid #f2f2f2;
             font-size: 14px;
@@ -55,7 +110,7 @@
             border-radius: 4px;
         }
 
-        .main-button:hover {
+        .main-buttons:hover {
             color: #222;
             background-color: #f8f8f8;
             border: 1px solid #c6c6c6;
@@ -104,30 +159,6 @@
             width: auto;
             height: 100%;
         }
-
-        #apps {
-            opacity: .6;
-            height: 50%;
-            width: auto;
-            align-self: center;
-            padding-right: 15px;
-        }
-
-        #apps:hover {
-            opacity: 1;
-        }
-        
-        #sign-in {
-            background-color: #4285f4;
-            color: white;
-            height: 67%;
-            align-self: center;
-            border-color: transparent;
-            border-radius: 2px;
-            font-weight: bold;
-            font-size: 13px;
-            padding: 0px 12px;
-        }
         
         a:hover {
             text-decoration: underline;
@@ -147,13 +178,13 @@
         <div class="main">
             <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             <div class="search-bar">
-                <input class="images" type="image" src="./images/outline_search_black_24dp.png" alt="Google search icon">
-                <input class="center" type="text">
-                <input class="images" type="image" src="./images/outline_mic_black_24dp.png" alt="Google mic icon">
+                <input id="search-icon" class="images" type="image" src="./images/outline_search_black_24dp.png" alt="Google search icon">
+                <input id="text-field" class="center" type="text">
+                <input id="mic-icon" class="images" type="image" src="./images/outline_mic_black_24dp.png" alt="Google mic icon">
             </div>
             <div class="buttons">
-                <button class="main-button" type="button">Google Search</button>
-                <button class="main-button" type="button">I'm Feeling Lucky</button>
+                <button class="main-buttons" type="button">Google Search</button>
+                <button class="main-buttons" type="button">I'm Feeling Lucky</button>
             </div>
     <!--
         <div class="security">
