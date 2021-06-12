@@ -17,6 +17,12 @@
         .main {
             display: flex;
             flex-direction: column;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            flex-direction: row;
         }
 
         .buttons {
@@ -52,6 +58,18 @@
             height: 100%;
         }
 
+        #sign-in {
+            background-color: #4285f4;
+            color: white;
+            height: 45%;
+            align-self: center;
+            border-color: transparent;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 0px 12px;
+        }
+
         a {
             color: black;
             font-family: sans-serif;
@@ -72,11 +90,16 @@
             <a href="">Store</a>
             <a class="push" href="">Gmail</a>
             <a href="">Images</a>
-            <img class="images" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
+            <input class="images" type="image" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
+            <button id="sign-in" type="button">Sign in</button>
         </div>
         <div class="main">
             <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-            <input class="center" type="text">
+            <div class="search-bar">
+                <input class="images" type="image" src="./images/outline_search_black_24dp.png" alt="Google search icon">
+                <input class="center" type="text">
+                <input class="images" type="image" src="./images/outline_mic_black_24dp.png" alt="Google mic icon">
+            </div>
             <div class="buttons">
                 <button class="center" type="button">Google Search</button>
                 <button class="center" type="button">I'm Feeling Lucky</button>
