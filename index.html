@@ -6,10 +6,13 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
-            justify-content: space-between;
+            justify-content: stretch;
         }
 
         .topnav {
+            position: absolute;
+            top: 0;
+            width: 100%;
             display: flex;
             flex-direction: row;
         }
@@ -20,23 +23,44 @@
             font-size: 13px;
             opacity: .75;
             text-decoration: none;
-            padding: 25px 10px;
+            padding: 15px;
         }
         
         .main {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 15%;
         }
 
         .search-bar {
             display: flex;
             flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .buttons {
             display: flex;
-            flex-direction: row;
+            flex-direction: row;        
+            column-gap: 10px;
+        }
+
+        .main-button {
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            font-size: 14px;
+            color: #5f6368;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .main-button:hover {
+            color: #222;
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
         }
 
     /*
@@ -50,6 +74,12 @@
             background-color: rgb(243, 243, 243);
             display: flex;
             flex-direction: row;
+            margin-left: -9px;
+            margin-right: -8px;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
         .footer a {
@@ -75,10 +105,22 @@
             height: 100%;
         }
 
+        #apps {
+            opacity: .6;
+            height: 50%;
+            width: auto;
+            align-self: center;
+            padding-right: 15px;
+        }
+
+        #apps:hover {
+            opacity: 1;
+        }
+        
         #sign-in {
             background-color: #4285f4;
             color: white;
-            height: 45%;
+            height: 67%;
             align-self: center;
             border-color: transparent;
             border-radius: 2px;
@@ -95,11 +137,11 @@
 <body>
     <div class="box">
         <div class="topnav">
-            <a href="">About</a>
-            <a href="">Store</a>
-            <a class="push" href="">Gmail</a>
-            <a href="">Images</a>
-            <input class="images" type="image" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
+            <a style="padding-left: 17px;" href="">About</a>
+            <a style="padding-left: 3px;" href="">Store</a>
+            <a class="push" style="padding-right: 5px;" href="">Gmail</a>
+            <a style="padding-left: 10px;" href="">Images</a>
+            <input id="apps" class="images" type="image" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
             <button id="sign-in" type="button">Sign in</button>
         </div>
         <div class="main">
@@ -110,8 +152,8 @@
                 <input class="images" type="image" src="./images/outline_mic_black_24dp.png" alt="Google mic icon">
             </div>
             <div class="buttons">
-                <button class="center" type="button">Google Search</button>
-                <button class="center" type="button">I'm Feeling Lucky</button>
+                <button class="main-button" type="button">Google Search</button>
+                <button class="main-button" type="button">I'm Feeling Lucky</button>
             </div>
     <!--
         <div class="security">
