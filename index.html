@@ -2,23 +2,13 @@
 <html>
 <head>
     <style>
-        body {
+        .box {
             display: flex;
             flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
         }
 
-        a {
-            color: black;
-            font-family: sans-serif;
-            font-size: 14px;
-            text-decoration: none;
-            padding: 25px 10px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-        
         .topnav {
             display: flex;
             flex-direction: row;
@@ -42,6 +32,7 @@
     */
 
         .footer {
+            background-color: rgb(243, 243, 243);
             display: flex;
             flex-direction: row;
         }
@@ -52,44 +43,63 @@
             margin-right: auto;
         }
 
-        #logo {
-            /*background-color: black;*/
-            margin: auto;
+        .push {
+            margin-left: auto;
         }
+
+        .images {
+            width: auto;
+            height: 100%;
+        }
+
+        a {
+            color: black;
+            font-family: sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 25px 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }        
     </style>
 </head>
 <body>
-    <div class="topnav">
-        <a href="">About</a>
-        <a href="">Store</a>
-        <a href="">Gmail</a>
-        <a href="">Images</a>
-    </div>
-    <div class="main">
-        <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <input class="center" type="text">
-        <div class="buttons">
-            <button class="center" type="button">Google Search</button>
-            <button class="center" type="button">I'm Feeling Lucky</button>
+    <div class="box">
+        <div class="topnav">
+            <a href="">About</a>
+            <a href="">Store</a>
+            <a class="push" href="">Gmail</a>
+            <a href="">Images</a>
+            <img class="images" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
         </div>
+        <div class="main">
+            <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <input class="center" type="text">
+            <div class="buttons">
+                <button class="center" type="button">Google Search</button>
+                <button class="center" type="button">I'm Feeling Lucky</button>
+            </div>
     <!--
         <div class="security">
             <img class="center" src="https://www.google.com/images/hpp/protecting-users-42x50.png" alt="protecting users">
             <a style="color: blue;" class="center" href="">Learn how Google helps keep you safe while you Search</a>
         </div>
     -->
-    </div>
-    <div class="footer">
-        <a href="">Advertising</a>
-        <a href="">Business</a>
-        <a href="">How Search works</a>
+        </div>
+        <div class="footer">
+            <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">How Search works</a>
     <!--    
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="Carbon neutral leaf">
         <a href="">Carbon neutral since 2007</a>
     -->
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Settings</a>
+            <a class="push" href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+        </div>
     </div>
 </body>
 </html>
