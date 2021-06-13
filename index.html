@@ -2,19 +2,14 @@
 <html>
 <head>
     <style>
-        .box {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            justify-content: stretch;
-        }
-
         .topnav {
             position: absolute;
+            left: 0;
             top: 0;
-            width: 100%;
+            width: 100vw;
             display: flex;
             flex-direction: row;
+            margin-top: 10px;
         }
 
         .topnav a {
@@ -23,7 +18,7 @@
             font-size: 13px;
             opacity: .75;
             text-decoration: none;
-            padding: 15px;
+            padding: 13px 10px 10px 10px;
         }
 
         #apps {
@@ -47,7 +42,8 @@
             border-radius: 2px;
             font-weight: bold;
             font-size: 13px;
-            padding: 0px 12px;
+            padding: 5px 11px;
+            margin-right: 40px;
         }
         
         .main {
@@ -67,7 +63,7 @@
             padding: 10px;
             border-radius: 50px;
             border: 1px solid #dfe1e5;
-            width: 450px;
+            width: 460px;
         }
 
         .search-bar:hover {
@@ -93,6 +89,7 @@
 
         #mic-icon {
             opacity: .35;
+            padding-right: 7px;
         }
 
         .buttons {
@@ -118,23 +115,16 @@
             box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
         }
 
-    /*
-        .security {
-            display: flex;
-            flex-direction: row;
-        }
-    */
-
         .footer {
             background-color: rgb(243, 243, 243);
             display: flex;
             flex-direction: row;
-            margin-left: -9px;
-            margin-right: -8px;
-            height: 50px;
-            position: absolute;
+            height: 40px;
+            position: fixed;
+            left: 0;
             bottom: 0;
             width: 100%;
+            border-top: 1px solid #e4e4e4;
         }
 
         .footer a {
@@ -142,7 +132,7 @@
             font-family: sans-serif;
             font-size: 14px;
             text-decoration: none;
-            padding: 25px 10px;
+            padding: 12px 12px 0px 15px;
         }
         
         .center {
@@ -166,14 +156,14 @@
     </style>
 </head>
 <body>
-    <div class="box">
+    <div>
         <div class="topnav">
-            <a style="padding-left: 17px;" href="">About</a>
-            <a style="padding-left: 3px;" href="">Store</a>
+            <a style="padding-left: 25px;" href="">About</a>
+            <a href="">Store</a>
             <a class="push" style="padding-right: 5px;" href="">Gmail</a>
-            <a style="padding-left: 10px;" href="">Images</a>
-            <input id="apps" class="images" type="image" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
-            <button id="sign-in" type="button">Sign in</button>
+            <a style="padding-left: 10px; padding-right: 20px;" href="">Images</a>
+            <input style="padding-top: 3px;" id="apps" class="images" type="image" src="./images/outline_apps_black_24dp.png" alt="Google apps icon">
+            <button style="margin-top: 3px;" id="sign-in" type="button">Sign in</button>
         </div>
         <div class="main">
             <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
@@ -186,24 +176,14 @@
                 <button class="main-buttons" type="button">Google Search</button>
                 <button class="main-buttons" type="button">I'm Feeling Lucky</button>
             </div>
-    <!--
-        <div class="security">
-            <img class="center" src="https://www.google.com/images/hpp/protecting-users-42x50.png" alt="protecting users">
-            <a style="color: blue;" class="center" href="">Learn how Google helps keep you safe while you Search</a>
-        </div>
-    -->
         </div>
         <div class="footer">
-            <a href="">Advertising</a>
+            <a style="padding-left: 30px;" href="">Advertising</a>
             <a href="">Business</a>
             <a href="">How Search works</a>
-    <!--    
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="Carbon neutral leaf">
-        <a href="">Carbon neutral since 2007</a>
-    -->
             <a class="push" href="">Privacy</a>
             <a href="">Terms</a>
-            <a href="">Settings</a>
+            <a style="padding-right: 30px;" href="">Settings</a>
         </div>
     </div>
 </body>
